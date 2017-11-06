@@ -4,4 +4,14 @@
 
 ## Usage
 
-https://github.com/catseye/Guten-gutter
+```sh
+# Unarchive sample text.
+cd corpora/
+tar -xzvf *.tar.gz
+cd ..
+```
+
+## See also
+
+- https://github.com/jsvine/markovify
+- https://github.com/catseye/Guten-gutter
