@@ -1,32 +1,36 @@
 {
-    "name": "markov-draftjs",
-    "version": "0.1.0",
-    "description": "Draft.js sample content generated with Markov chains of Project Gutenberg books.",
-    "main": "data.js",
-    "scripts": {
-        "test": "eslint *.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/thibaudcolas/markov-draftjs.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/thibaudcolas/markov-draftjs/issues"
-    },
-    "homepage": "https://github.com/thibaudcolas/markov-draftjs#readme",
-    "eslint": {
-        "extends": "plugin:springload/prettier"
-    },
-    "devDependencies": {
-        "eslint": "^3.19.0",
-        "eslint-plugin-springload": "^2.2.0",
-        "prettier": "^1.8.1"
-    },
-    "dependencies": {
-        "markov-chains-text": "^1.0.0",
-        "randomcolor": "^0.5.3"
-    }
+  "name": "markov-draftjs",
+  "version": "0.1.0",
+  "description": "Draft.js sample content generated with Markov chains of Project Gutenberg books.",
+  "main": "data.js",
+  "author": "Thibaud Colas",
+  "license": "MIT",
+  "homepage": "https://github.com/thibaudcolas/markov_draftjs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thibaudcolas/markov_draftjs.git"
+  },
+  "keywords": [
+    "draftjs",
+    "editor",
+    "markov",
+    "content"
+  ],
+  "bugs": {
+    "url": "https://github.com/thibaudcolas/markov_draftjs/issues"
+  },
+  "eslint": {
+    "extends": "plugin:springload/prettier"
+  },
+  "scripts": {
+    "test": "eslint *.js"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-springload": "^2.2.0",
+    "markov-chains-text": "^1.0.0",
+    "prettier": "^1.8.1",
+    "randomcolor": "^0.5.3"
+  },
+  "dependencies": {}
 }

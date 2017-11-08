@@ -2,6 +2,11 @@
 
 > Draft.js sample content generated with [Markov chains](https://en.wikipedia.org/wiki/Markov_chain) of [Project Gutenberg](https://www.gutenberg.org/) books.
 
+This sample content is meant to be used while testing projects based on Draft.js, in particular:
+
+- [Draftail](https://github.com/springload/draftail)
+- [draftjs_exporter](https://github.com/springload/draftjs_exporter)
+
 ## Usage
 
 ```sh
