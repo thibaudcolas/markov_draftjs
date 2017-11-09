@@ -38,7 +38,7 @@
   "dependencies": {},
   "scripts": {
     "start": "nodemon generate.js",
-    "lint": "eslint markov_draftjs/index.js",
+    "lint": "echo 'add JS linting'",
     "test": "jest",
     "test:coverage": "jest --coverage"
   }
