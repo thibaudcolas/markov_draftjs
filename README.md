@@ -28,6 +28,36 @@ npm install
 npm run start
 ```
 
+## Development
+
+> Requirements: `virtualenv`, `pyenv`, `twine`
+
+```sh
+git clone git@github.com:thibaudcolas/markov_draftjs.git
+cd markov_draftjs/
+# Install the git hooks.
+./.githooks/deploy
+# Install the Python environment.
+virtualenv .venv
+source ./.venv/bin/activate
+make init
+# Install required Python versions
+pyenv install --skip-existing 2.7.11
+    pyenv install --skip-existing 3.4.4
+# Make required Python versions available globally.
+pyenv global system 2.7.11 3.4.4
+```
+
+## Releases
+
+- Make a new branch for the release of the new version.
+- Update the [CHANGELOG](CHANGELOG.md).
+- Update the version number in `markov_draftjs/__init__.py`, following semver.
+- Make a PR and squash merge it.
+- Back on master with the PR merged, use `make publish` (confirm, and enter your password) and `npm publish`.
+- Finally, go to GitHub and create a release and a tag for the new version.
+- Done!
+
 ## See also
 
 - https://github.com/jsvine/markovify

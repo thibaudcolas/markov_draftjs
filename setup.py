@@ -5,12 +5,13 @@ from __future__ import absolute_import, print_function, unicode_literals
 import io
 import re
 
+from markov_draftjs import (
+    __author__, __author_email__, __description__, __license__, __title__, __url__, __version__)
+
 try:
     from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup
-
-from markov_draftjs import __title__, __version__, __description__, __url__, __author__, __author_email__, __license__
 
 dependencies = [
 

@@ -36,6 +36,8 @@ pids
 lib-cov
 coverage
 .coverage
+coverage_html_report
+.tox
 .grunt
 .bundle
 docs/pattern-library/index.html
