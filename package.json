@@ -20,7 +20,8 @@
     "url": "https://github.com/thibaudcolas/markov_draftjs/issues"
   },
   "files": [
-    "markov_draftjs"
+    "markov_draftjs/content.json",
+    "markov_draftjs/index.js"
   ],
   "eslint": {
     "extends": "plugin:springload/prettier"
