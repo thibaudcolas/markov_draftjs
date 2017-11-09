@@ -50,9 +50,10 @@ pyenv global system 2.7.11 3.4.4
 
 ## Releases
 
+- Use `irish-pub` to confirm the content of the npm package.
 - Make a new branch for the release of the new version.
 - Update the [CHANGELOG](CHANGELOG.md).
-- Update the version number in `markov_draftjs/__init__.py`, following semver.
+- Update the version number in `markov_draftjs/__init__.py`, and `package.json`, following semver.
 - Make a PR and squash merge it.
 - Back on master with the PR merged, use `make publish` (confirm, and enter your password) and `npm publish`.
 - Finally, go to GitHub and create a release and a tag for the new version.
