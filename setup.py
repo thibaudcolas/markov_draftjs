@@ -56,15 +56,7 @@ def md2pypi(filename):
         content = content.replace(match.group(0), rst_block)
 
     for match in RE_IMAGE.finditer(content):
-        url = match.group('url')
-        if not url.startswith('http'):
-            url = '/'.join((__url__, 'raw/master', url))
-
-        rst_block = '\n'.join([
-            '.. image:: {0}'.format(url),
-            '  :alt: {0}'.format(match.group('text'))
-        ])
-        content = content.replace(match.group(0), rst_block)
+        content = content.replace(match.group(0), '')
 
     content = RE_LINK.sub('`\g<text> <\g<url>>`_', content)
     content = RE_CODE.sub('``\g<1>``', content)
