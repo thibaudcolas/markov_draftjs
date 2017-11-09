@@ -11,7 +11,7 @@ const karamazov = fs.readFileSync(
 const fakeKaramazov = new Text(karamazov);
 
 const makeRange = (size = Math.ceil(Math.random() * 10) + 3) => {
-    let range = [];
+    const range = [];
 
     for (let i = 0; i < size; i++) {
         range.push(i);
@@ -40,7 +40,9 @@ const makeImageSource = () => {
     const bgColor = randomColor().replace('#', '');
     const textColor = randomColor().replace('#', '');
     const text = makeId();
-    return `http://via.placeholder.com/350x99/${bgColor}/${textColor}?text=${text}`;
+    return `http://via.placeholder.com/350x99/${bgColor}/${textColor}?text=${
+        text
+    }`;
 };
 
 const getStats = contentStates => {
