@@ -11,12 +11,15 @@ init: clean-pyc ## Install dependencies and initialise for development.
 lint: ## Lint the project.
 	flake8 markov_draftjs tests example.py setup.py
 	isort --check-only --diff --recursive markov_draftjs tests example.py setup.py
+	npm run lint
 
 test: ## Test the project.
 	python -m unittest discover
+	npm run test
 
 test-coverage: ## Run the tests while generating test coverage data.
 	coverage run -m unittest discover && coverage report && coverage html
+	npm run test:coverage
 
 test-ci: ## Continuous integration test suite.
 	tox
@@ -29,5 +32,6 @@ clean-pyc: ## Remove Python file artifacts.
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 
-publish: ## Publishes a new version to pypi.
+publish: ## Publishes a new version to pypi and npm
+	npm publish
 	rm dist/* && python setup.py sdist && twine upload dist/* && echo 'Success! Go to https://pypi.python.org/pypi/markov_draftjs and check that all is well.'
