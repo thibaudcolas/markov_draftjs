@@ -30,11 +30,13 @@
     "eslint-plugin-springload": "^2.2.0",
     "jest": "^21.2.1",
     "markov-chains-text": "^1.0.0",
+    "nodemon": "^1.12.1",
     "prettier": "^1.8.1",
     "randomcolor": "^0.5.3"
   },
   "dependencies": {},
   "scripts": {
+    "start": "nodemon generate.js",
     "lint": "eslint *.js",
     "test": "jest"
   }
