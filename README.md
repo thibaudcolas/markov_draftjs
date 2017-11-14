@@ -6,27 +6,29 @@ This sample content is meant to be used while testing projects based on Draft.js
 
 ## Using the sample content
 
-In order to facilitate using the samples across multiple projects, they are published as packages on [npm](https://www.npmjs.com/package/markov_draftjs) and [PyPI](https://pypi.python.org/pypi/markov_draftjs).
-
-npm install
-
-pypi install
-
-## Using the generation scripts
+In order to simplify using the samples across multiple projects, they are published as packages on [npm](https://www.npmjs.com/package/markov_draftjs) and [PyPI](https://pypi.python.org/pypi/markov_draftjs).
 
 ```sh
-# Unarchive sample text.
-cd corpora/
-tar -xzvf *.tar.gz
-cd ..
-
-# Install dependencies
-nvm install
-npm install
-
-# Generate a fresh content export.
-npm run start
+# JavaScript projects.
+npm install markov_draftjs
+# Python projects.
+pip install markov_draftjs
 ```
+
+Then, in JavaScript:
+
+```js
+const contentStates = require('markov_draftjs');
+```
+
+And in Python:
+
+```py
+from markov_draftjs import get_content_sample
+
+content_states = get_content_sample()
+```
+
 
 ## Development
 
@@ -35,17 +37,32 @@ npm run start
 ```sh
 git clone git@github.com:thibaudcolas/markov_draftjs.git
 cd markov_draftjs/
+
 # Install the git hooks.
 ./.githooks/deploy
+
+# Install dependencies
+nvm install
+npm install
+
+# Unarchive sample text.
+cd corpora/
+tar -xzvf *.tar.gz
+cd ..
+
 # Install the Python environment.
 virtualenv .venv
 source ./.venv/bin/activate
 make init
+
 # Install required Python versions
 pyenv install --skip-existing 2.7.11
     pyenv install --skip-existing 3.4.4
 # Make required Python versions available globally.
 pyenv global system 2.7.11 3.4.4
+
+# Generate new sample content.
+npm run start
 ```
 
 ## Releases
