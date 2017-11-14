@@ -58,7 +58,7 @@ make init
 
 # Install required Python versions
 pyenv install --skip-existing 2.7.11
-    pyenv install --skip-existing 3.4.4
+pyenv install --skip-existing 3.4.4
 # Make required Python versions available globally.
 pyenv global system 2.7.11 3.4.4
 
