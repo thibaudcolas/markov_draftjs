@@ -29,6 +29,7 @@ from markov_draftjs import get_content_sample
 content_states = get_content_sample()
 ```
 
+The sample content is also available from GitHub, eg. with RawGit (warning - big file): [https://cdn.rawgit.com/thibaudcolas/markov_draftjs/44827d98/markov_draftjs/content.json](https://cdn.rawgit.com/thibaudcolas/markov_draftjs/44827d98/markov_draftjs/content.json).
 
 ## Development
 
