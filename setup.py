@@ -99,7 +99,12 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Text Editors :: Word Processors',
     ],
-    keywords='development',
+    keywords=[
+        'draftjs',
+        'editor',
+        'markov',
+        'content'
+    ],
     packages=find_packages(),
     include_package_data=True,
     install_requires=dependencies,
