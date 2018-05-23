@@ -4,6 +4,12 @@
 
 This sample content is meant to be used while testing projects based on Draft.js, in particular [Draftail](https://github.com/springload/draftail) and [draftjs_exporter](https://github.com/springload/draftjs_exporter).
 
+## What is this for?
+
+Sample content can be useful to stress-test and benchmark tools built to handle Draft.js content. For the exporter, this is a great way to reliably assess its performance.
+
+The content from this repository isn't generated randomly – while the text and metadata values are fake, the content’s structure and the distribution of rich text formatting amongst the text is representative of that of 3 big CMS sites combined.
+
 ## Using the sample content
 
 In order to simplify using the samples across multiple projects, they are published as packages on [npm](https://www.npmjs.com/package/markov_draftjs) and [PyPI](https://pypi.python.org/pypi/markov_draftjs).
