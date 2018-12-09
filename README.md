@@ -4,11 +4,30 @@
 
 This sample content is meant to be used while testing projects based on Draft.js, in particular [Draftail](https://www.draftail.org/) and [draftjs_exporter](https://github.com/springload/draftjs_exporter).
 
-## What is this for?
+## Why
 
 Sample content can be useful to stress-test and benchmark tools built to handle Draft.js content. For the exporter, this is a great way to reliably assess its performance.
 
 The content from this repository isn't generated randomly – while the text and metadata values are fake, the content’s structure and the distribution of rich text formatting amongst the text is representative of that of 3 big CMS sites combined.
+
+Here are rich text formats used in the content:
+
+- Blocks
+  - `unstyled`
+  - `header-two`
+  - `header-three`
+  - `header-four`
+  - `ordered-list-item`
+  - `unordered-list-item`
+  - `atomic`
+- Inline styles
+  - `BOLD`
+  - `ITALIC`
+- Entities
+  - `LINK`, `MUTABLE` with `url` (URL), `linkType` (`page|external|email`), optionally `id` (number)
+  - `DOCUMENT`, `MUTABLE` with `label` (plain text), `id` (string containing a number)
+  - `IMAGE`, `IMMUTABLE` with `title` (plain text), `id` (string containing a number), `src` (URL)
+  - `HORIZONTAL_RULE`, `IMMUTABLE` without data
 
 ## Using the sample content
 
