@@ -17,8 +17,8 @@ Here are rich text formats used in the content:
   - `header-two`
   - `header-three`
   - `header-four`
-  - `ordered-list-item`
-  - `unordered-list-item`
+  - `ordered-list-item`, depth: 0 or 1
+  - `unordered-list-item`, depth: 0 or 1
   - `atomic`
 - Inline styles
   - `BOLD`
