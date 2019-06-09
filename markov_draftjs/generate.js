@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const Text = require('markov-chains-text').default;
-const randomColor = require('randomcolor');
 
 const karamazov = fs.readFileSync(
     path.join(__dirname, 'corpora', 'karamazov.txt'),
@@ -34,15 +33,6 @@ const makeText = minLength => {
     }
 
     return text;
-};
-
-const makeImageSource = () => {
-    const bgColor = randomColor().replace('#', '');
-    const textColor = randomColor().replace('#', '');
-    const text = makeId();
-    return `http://via.placeholder.com/350x99/${bgColor}/${textColor}?text=${
-        text
-    }`;
 };
 
 const getStats = contentStates => {
