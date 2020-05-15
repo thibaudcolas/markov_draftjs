@@ -1,4 +1,4 @@
-# markov_draftjs [![PyPI](https://img.shields.io/pypi/v/markov_draftjs.svg)](https://pypi.python.org/pypi/markov_draftjs) [![npm](https://img.shields.io/npm/v/markov_draftjs.svg?style=flat-square)](https://www.npmjs.com/package/markov_draftjs) [![Build Status](https://travis-ci.org/thibaudcolas/markov_draftjs.svg?branch=master)](https://travis-ci.org/thibaudcolas/markov_draftjs)
+# markov_draftjs [![PyPI](https://img.shields.io/pypi/v/markov_draftjs.svg)](https://pypi.python.org/pypi/markov_draftjs) [![npm](https://img.shields.io/npm/v/markov_draftjs.svg)](https://www.npmjs.com/package/markov_draftjs) [![Build Status](https://travis-ci.com/thibaudcolas/markov_draftjs.svg?branch=master)](https://travis-ci.com/thibaudcolas/markov_draftjs)
 
 > Draft.js sample content generated with [Markov chains](https://en.wikipedia.org/wiki/Markov_chain) of [Project Gutenberg](https://www.gutenberg.org/) books.
 
