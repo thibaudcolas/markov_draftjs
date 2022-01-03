@@ -1,4 +1,4 @@
-.PHONY: clean-pyc init help test-ci
+.PHONY: build clean-pyc init help test-ci
 .DEFAULT_GOAL := help
 
 help: ## See what commands are available.
