@@ -26,5 +26,9 @@ clean-pyc: ## Remove Python file artifacts.
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 
-publish: ## Publishes a new version to pypi
-	rm dist/* && python setup.py sdist && twine upload dist/* && echo 'Success! Go to https://pypi.python.org/pypi/markov_draftjs and check that all is well.'
+build: ## Builds package for publication.
+	rm -f dist/*
+	python setup.py sdist bdist_wheel
+
+publish: build ## Publishes a new version to pypi.
+	twine upload dist/*
