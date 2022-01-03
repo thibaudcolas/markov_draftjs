@@ -1,4 +1,4 @@
-# markov_draftjs [![PyPI](https://img.shields.io/pypi/v/markov_draftjs.svg)](https://pypi.python.org/pypi/markov_draftjs) [![npm](https://img.shields.io/npm/v/markov_draftjs.svg)](https://www.npmjs.com/package/markov_draftjs) [![Build Status](https://travis-ci.com/thibaudcolas/markov_draftjs.svg?branch=master)](https://travis-ci.com/thibaudcolas/markov_draftjs)
+# markov_draftjs [![PyPI](https://img.shields.io/pypi/v/markov_draftjs.svg)](https://pypi.python.org/pypi/markov_draftjs) [![npm](https://img.shields.io/npm/v/markov_draftjs.svg)](https://www.npmjs.com/package/markov_draftjs)
 
 > Draft.js sample content generated with [Markov chains](https://en.wikipedia.org/wiki/Markov_chain) of [Project Gutenberg](https://www.gutenberg.org/) books.
 
@@ -43,7 +43,7 @@ pip install markov_draftjs
 Then, in JavaScript:
 
 ```js
-const contentStates = require('markov_draftjs');
+const contentStates = require("markov_draftjs");
 ```
 
 And in Python:
@@ -82,10 +82,9 @@ source ./.venv/bin/activate
 make init
 
 # Install required Python versions
-pyenv install --skip-existing 2.7.11
-pyenv install --skip-existing 3.4.4
+pyenv install --skip-existing 3.10.0
 # Make required Python versions available globally.
-pyenv global system 2.7.11 3.4.4
+pyenv global system 3.10.0
 
 # Generate new sample content.
 npm run start
@@ -98,7 +97,7 @@ npm run start
 - Update the [CHANGELOG](CHANGELOG.md).
 - Update the version number in `markov_draftjs/__init__.py`, and `package.json`, following semver.
 - Make a PR and squash merge it.
-- Back on master with the PR merged, use `make publish` (confirm, and enter your password) and `npm publish`.
+- Back on main with the PR merged, use `make publish` (confirm, and enter your password) and `npm publish`.
 - Finally, go to GitHub and create a release and a tag for the new version.
 - Done!
 
