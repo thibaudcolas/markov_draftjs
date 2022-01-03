@@ -2,7 +2,7 @@ import json
 import os
 
 __title__ = 'markov_draftjs'
-__version__ = '0.1.1'
+__version__ = '0.2.0'
 __description__ = 'Draft.js sample content generated with Markov chains of Project Gutenberg books.'
 __url__ = 'https://github.com/thibaudcolas/markov_draftjs'
 __author__ = 'Thibaud Colas'

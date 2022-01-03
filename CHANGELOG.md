@@ -3,6 +3,14 @@
 > All notable changes to this project will be documented in this file.
 > This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [v0.2.0](https://github.com/thibaudcolas/markov_draftjs/releases/tag/v0.2.0)
+
+### Changed
+
+- Improve the package metadata.
+- Remove support for legacy Python versions.
+- Publish wheel.
+
 ## [v0.1.1](https://github.com/thibaudcolas/markov_draftjs/releases/tag/v0.1.1)
 
 ### Changed
