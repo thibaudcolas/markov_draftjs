@@ -6,23 +6,17 @@ help: ## See what commands are available.
 
 init: clean-pyc ## Install dependencies and initialise for development.
 	pip install --upgrade pip
-	pip install -e '.[testing,docs]' -U
+	pip install -r requirements.txt
 
 lint: ## Lint the project.
 	flake8 markov_draftjs tests example.py setup.py
-	isort --check-only --diff --recursive markov_draftjs tests example.py setup.py
-	npm run lint
+	isort --check-only --diff markov_draftjs tests example.py setup.py
 
 test: ## Test the project.
 	python -m unittest discover
-	npm run test
 
 test-coverage: ## Run the tests while generating test coverage data.
 	coverage run -m unittest discover && coverage report && coverage html
-	npm run test:coverage
-
-test-ci: ## Continuous integration test suite.
-	tox
 
 dev: ## Runs the example code
 	python example.py

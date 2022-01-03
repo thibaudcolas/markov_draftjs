@@ -1,9 +1,5 @@
-# -*- coding: utf-8 -*-
-
-from __future__ import absolute_import, unicode_literals
-
-import os
 import json
+import os
 
 __title__ = 'markov_draftjs'
 __version__ = '0.1.1'
@@ -17,6 +13,7 @@ __copyright__ = 'Copyright 2017-present %s' % __author__
 
 def get_content_sample():
     content_path = os.path.join(os.path.dirname(__file__), 'content.json')
-    content = json.loads(open(content_path, 'r').read())
+    with open(content_path, 'r') as f:
+        content = json.loads(f.read())
 
     return content
