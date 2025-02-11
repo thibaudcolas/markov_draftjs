@@ -13,13 +13,13 @@ lint: ## Lint the project.
 	isort --check-only --diff markov_draftjs tests example.py setup.py
 
 test: ## Test the project.
-	python -m unittest discover
+	python -X dev -W error -m unittest discover
 
 test-coverage: ## Run the tests while generating test coverage data.
 	coverage run -m unittest discover && coverage report && coverage html
 
 dev: ## Runs the example code
-	python example.py
+	python -X dev -W error example.py
 
 clean-pyc: ## Remove Python file artifacts.
 	find . -name '*.pyc' -exec rm -f {} +
@@ -28,7 +28,7 @@ clean-pyc: ## Remove Python file artifacts.
 
 build: ## Builds package for publication.
 	rm -f dist/*
-	python setup.py sdist bdist_wheel
+	python -X dev -W error -m build
 
 publish: build ## Publishes a new version to pypi.
 	twine upload dist/*
