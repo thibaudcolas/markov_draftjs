@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Draft.js sample content generated with Markov chains of Project Gutenberg books.",
   "main": "./markov_draftjs/index.js",
+  "module": "./markov_draftjs/index.mjs",
+  "types": "./markov_draftjs/markov_draftjs.d.ts",
   "author": "Thibaud Colas",
   "license": "MIT",
   "homepage": "https://github.com/thibaudcolas/markov_draftjs#readme",

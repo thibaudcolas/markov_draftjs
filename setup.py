@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import io
 
 from setuptools import find_packages, setup
@@ -28,27 +26,23 @@ setup(
     author_email=__author_email__,
     license=__license__,
     classifiers=[
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 3',
-        'Topic :: Internet :: WWW/HTTP',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
-        'Topic :: Internet :: WWW/HTTP :: Site Management',
-        'Topic :: Software Development :: Libraries :: Application Frameworks',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Text Editors :: Word Processors',
+        "Environment :: Web Environment",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Topic :: Internet :: WWW/HTTP",
+        "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+        "Topic :: Internet :: WWW/HTTP :: Site Management",
+        "Topic :: Software Development :: Libraries :: Application Frameworks",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Text Editors :: Word Processors",
     ],
-    keywords=[
-        'draftjs',
-        'editor',
-        'markov',
-        'content'
-    ],
+    keywords=["draftjs", "editor", "markov", "content"],
     packages=find_packages(),
     include_package_data=True,
+    package_data={"markov_draftjs": ["py.typed"]},
     install_requires=[],
     extras_require={},
     zip_safe=False,
