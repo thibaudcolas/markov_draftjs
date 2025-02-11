@@ -1,6 +1,6 @@
 {
   "name": "markov_draftjs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Draft.js sample content generated with Markov chains of Project Gutenberg books.",
   "main": "./markov_draftjs/index.js",
   "module": "./markov_draftjs/index.mjs",

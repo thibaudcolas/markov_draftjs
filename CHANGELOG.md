@@ -3,6 +3,12 @@
 > All notable changes to this project will be documented in this file.
 > This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [v2.0.1](https://github.com/thibaudcolas/markov_draftjs/releases/tag/v2.0.1)
+
+### Fixed
+
+- Add missing Node package files.
+
 ## [v2.0.0](https://github.com/thibaudcolas/markov_draftjs/releases/tag/v2.0.0)
 
 ### Added
