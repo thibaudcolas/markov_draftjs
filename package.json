@@ -1,6 +1,6 @@
 {
   "name": "markov_draftjs",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Draft.js sample content generated with Markov chains of Project Gutenberg books.",
   "main": "./markov_draftjs/index.js",
   "author": "Thibaud Colas",
