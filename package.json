@@ -23,7 +23,9 @@
   },
   "files": [
     "markov_draftjs/content.json",
-    "markov_draftjs/index.js"
+    "markov_draftjs/index.js",
+    "markov_draftjs/index.mjs",
+    "markov_draftjs/markov_draftjs.d.ts"
   ],
   "devDependencies": {
     "jest": "^27.4.5",
