@@ -3,6 +3,13 @@
 > All notable changes to this project will be documented in this file.
 > This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [v2.0.0](https://github.com/thibaudcolas/markov_draftjs/releases/tag/v2.0.0)
+
+### Added
+
+- Add type annotations in Python.
+- Add type annotations in JavaScript / TypeScript.
+
 ## [v1.0.0](https://github.com/thibaudcolas/markov_draftjs/releases/tag/v1.0.0)
 
 This release is identical to the previous v0.2.0, but is a major version bump to indicate that the package is now considered stable.
