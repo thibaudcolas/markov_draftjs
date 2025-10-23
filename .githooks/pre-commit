@@ -23,5 +23,6 @@ PY_FILES=$(echo "$CHANGED_FILES" | { grep .py$ || true; })
 
 if [ -n "$PY_FILES" ];
 then
+    make lint
     make test-ci
 fi
