@@ -10,8 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
       - uses: actions/setup-python@v6
       - uses: astral-sh/setup-uv@v6
       - run: make init
       - run: make lint
       - run: make test-coverage
+      - run: npm run test:coverage
