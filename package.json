@@ -2,9 +2,9 @@
   "name": "markov_draftjs",
   "version": "2.0.1",
   "description": "Draft.js sample content generated with Markov chains of Project Gutenberg books.",
-  "main": "./markov_draftjs/index.js",
-  "module": "./markov_draftjs/index.mjs",
-  "types": "./markov_draftjs/markov_draftjs.d.ts",
+  "main": "./src/markov_draftjs/index.js",
+  "module": "./src/markov_draftjs/index.mjs",
+  "types": "./src/markov_draftjs/markov_draftjs.d.ts",
   "author": "Thibaud Colas",
   "license": "MIT",
   "homepage": "https://github.com/thibaudcolas/markov_draftjs#readme",
@@ -22,10 +22,10 @@
     "url": "https://github.com/thibaudcolas/markov_draftjs/issues"
   },
   "files": [
-    "markov_draftjs/content.json",
-    "markov_draftjs/index.js",
-    "markov_draftjs/index.mjs",
-    "markov_draftjs/markov_draftjs.d.ts"
+    "src/markov_draftjs/content.json",
+    "src/markov_draftjs/index.js",
+    "src/markov_draftjs/index.mjs",
+    "src/markov_draftjs/markov_draftjs.d.ts"
   ],
   "devDependencies": {
     "jest": "^27.4.5",
@@ -33,7 +33,7 @@
     "nodemon": "^2.0.15"
   },
   "scripts": {
-    "start": "nodemon generate.js",
+    "start": "nodemon src/markov_draftjs/generate.js",
     "test": "jest",
     "test:coverage": "jest --coverage"
   }
