@@ -28,9 +28,9 @@
     "src/markov_draftjs/markov_draftjs.d.ts"
   ],
   "devDependencies": {
-    "jest": "^27.4.5",
+    "jest": "^30.2.0",
     "markov-chains-text": "^1.0.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^3.1.10"
   },
   "scripts": {
     "start": "nodemon src/markov_draftjs/generate.js",

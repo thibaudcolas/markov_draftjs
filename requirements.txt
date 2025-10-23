@@ -1,4 +1,0 @@
-coverage==6.2
-flake8==4.0.1
-isort==5.10.1
-build==1.2.2.post1

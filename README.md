@@ -58,7 +58,7 @@ The sample content is also available from GitHub, eg. with RawGit (warning - big
 
 ## Development
 
-> Requirements: `virtualenv`, `pyenv`, `twine`
+> Requirements: [`uv`](https://docs.astral.sh/uv/), `fnm`
 
 ```sh
 git clone git@github.com:thibaudcolas/markov_draftjs.git
@@ -67,8 +67,8 @@ cd markov_draftjs/
 # Install the git hooks.
 ./.githooks/deploy
 
-# Install dependencies
-nvm install
+# Install JavaScript dependencies.
+fnm install
 npm install
 
 # Unarchive sample text.
@@ -76,17 +76,12 @@ cd corpora/
 tar -xzvf *.tar.gz
 cd ..
 
-# Install the Python environment.
-virtualenv .venv
-source ./.venv/bin/activate
-make init
-
-# Install required Python versions
-pyenv install --skip-existing 3.10.0
-# Make required Python versions available globally.
-pyenv global system 3.10.0
+# Install the Python environment (creates .venv/).
+uv sync --group dev
+# (Equivalent to running `make init`.)
 
 # Generate new sample content.
+uv run python -X dev -W error example.py
 npm run start
 ```
 
@@ -95,9 +90,9 @@ npm run start
 - Use `irish-pub` to confirm the content of the npm package.
 - Make a new branch for the release of the new version.
 - Update the [CHANGELOG](CHANGELOG.md).
-- Update the version number in `markov_draftjs/__init__.py`, and `package.json`, following semver.
+- Update the version number in `pyproject.toml`, `markov_draftjs/__init__.py`, and `package.json`, following semver.
 - Make a PR and squash merge it.
-- Back on main with the PR merged, use `make publish` (confirm, and enter your password) and `npm publish`.
+- Back on main with the PR merged, use `make publish` (powered by `uv publish`) and `npm publish`.
 - Finally, go to GitHub and create a release and a tag for the new version.
 - Done!
 

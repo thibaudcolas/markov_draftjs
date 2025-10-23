@@ -5,21 +5,22 @@ help: ## See what commands are available.
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36mmake %-15s\033[0m # %s\n", $$1, $$2}'
 
 init: clean-pyc ## Install dependencies and initialise for development.
-	pip install --upgrade pip
-	pip install -r requirements.txt
+	uv sync --group dev
 
 lint: ## Lint the project.
-	flake8 markov_draftjs tests example.py setup.py
-	isort --check-only --diff markov_draftjs tests example.py setup.py
+	uv run ruff check
+	uv run ruff format --check .
 
 test: ## Test the project.
-	python -X dev -W error -m unittest discover
+	uv run python -X dev -W error -m unittest discover
 
 test-coverage: ## Run the tests while generating test coverage data.
-	coverage run -m unittest discover && coverage report && coverage html
+	uv run coverage run -m unittest discover
+	uv run coverage report
+	uv run coverage html
 
 dev: ## Runs the example code
-	python -X dev -W error example.py
+	uv run python -X dev -W error example.py
 
 clean-pyc: ## Remove Python file artifacts.
 	find . -name '*.pyc' -exec rm -f {} +
@@ -28,7 +29,7 @@ clean-pyc: ## Remove Python file artifacts.
 
 build: ## Builds package for publication.
 	rm -f dist/*
-	python -X dev -W error -m build
+	uv build
 
 publish: build ## Publishes a new version to pypi.
-	twine upload dist/*
+	uv publish

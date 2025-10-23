@@ -1,0 +1,35 @@
+[build-system]
+requires = ["uv_build>=0.7.19,<0.8.0"]
+build-backend = "uv_build"
+
+[project]
+name = "markov_draftjs"
+version = "2.0.0"
+description = "Draft.js sample content generated with Markov chains of Project Gutenberg books."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Thibaud Colas", email = "thibaudcolas@gmail.com" }]
+keywords = ["draftjs", "editor", "markov", "content"]
+classifiers = [
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+  "Topic :: Internet :: WWW/HTTP :: Site Management",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Text Editors :: Word Processors",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/thibaudcolas/markov_draftjs"
+Repository = "https://github.com/thibaudcolas/markov_draftjs"
+Issues = "https://github.com/thibaudcolas/markov_draftjs/issues"
+
+[dependency-groups]
+dev = ["ruff>=0.14.2", "coverage>=7.11.0"]

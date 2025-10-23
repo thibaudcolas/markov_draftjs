@@ -50,6 +50,7 @@ node_modules*
 python_modules*
 bower_components
 .venv
+.uv
 venv
 $virtualenv.tar.gz
 $node_modules.tar.gz
