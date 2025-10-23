@@ -28,13 +28,11 @@
     "src/markov_draftjs/markov_draftjs.d.ts"
   ],
   "devDependencies": {
-    "jest": "^30.2.0",
-    "markov-chains-text": "^1.0.0",
-    "nodemon": "^3.1.10"
+    "markov-chains-text": "^1.0.0"
   },
   "scripts": {
-    "start": "nodemon src/markov_draftjs/generate.js",
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "start": "node --watch src/markov_draftjs/generate.js",
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage"
   }
 }

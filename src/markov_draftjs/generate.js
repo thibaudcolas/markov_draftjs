@@ -3,7 +3,7 @@ const path = require("path");
 const Text = require("markov-chains-text").default;
 
 const karamazov = fs.readFileSync(
-  path.join(__dirname, "corpora", "karamazov.txt"),
+  path.join(__dirname, "..", "..", "corpora", "karamazov.txt"),
   "utf8"
 );
 

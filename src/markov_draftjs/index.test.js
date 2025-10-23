@@ -1,7 +1,7 @@
+const test = require("node:test");
+const assert = require("node:assert/strict");
 const index = require("./index");
 
-describe("markov_draftjs", () => {
-  it("exports its sample ContentState", () => {
-    expect(index.length).toEqual(792);
-  });
+test("exports its sample ContentState", () => {
+  assert.equal(index.length, 792);
 });
